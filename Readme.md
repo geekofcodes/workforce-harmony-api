@@ -36,4 +36,15 @@ This is a simple Employee Management System API built using Node.js and Express.
     ```http
     GET /api/employees
     ```
+    Retrieve a list of all employees.
+    Response:
+    [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "position": "Software Engineer",
+            "email": "john@example.com"
+        },
+        // ... other employees
+    ]
 
