@@ -203,6 +203,39 @@ This is a simple Employee Management System API built using Node.js and Express.
     }
     ```
 
+### Authentication
+Authentication is required for certain endpoints. When creating a new employee, an _**authentication token**_ will be generated based on the provided name and email. Include this token in the Authorization header for subsequent requests to protected endpoints.
+```http
+    Authorization: YourAuthTokenHere
+```
+
+### Using Authorization Token in Postman
+
+1. Create a New Employee:
+    * Make a `POST` request to `http://localhost:3000/api/employees` (or your API endpoint) with the following sample JSON body:
+    ```json
+    {
+      "name": "YourName",
+      "position": "YourPosition",
+      "email": "your.email@example.com"
+    }
+    ```
+    * Send the request, and the server should respond with a JSON object containing the _**authorization token**_.
+
+2. Copy the Authorization Token:
+    * Once you receive the response, look for the authToken field. This is your authorization token.
+    * Copy the value of the `authToken`.
+
+3. Use Authorization Token in Subsequent Requests:
+    * In any subsequent request to the protected endpoints (those requiring authentication), you need to include the authorization token in the request header.
+    * Open your request in Postman.
+    * Go to the "Headers" section.
+    * Add a new header with the key Authorization and the value being YourAuthToken (replace YourAuthToken with the actual authorization token you copied).
+    
+4. Send Request:
+    * Click on the "Send" button to make the request with the authorization token.
+
+Now, your request should be authenticated, and you'll be able to access the protected endpoints.
 
 
 
