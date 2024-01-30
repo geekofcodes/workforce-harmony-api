@@ -30,3 +30,10 @@ This is a simple Employee Management System API built using Node.js and Express.
     ```
     The server will run on http://localhost:3000 by default.
 
+### API Endpoints
+
+#### 1. Get All Employees
+```http
+GET /api/employees
+```
+
