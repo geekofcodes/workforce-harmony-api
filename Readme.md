@@ -7,18 +7,18 @@ This is a simple Employee Management System API built using Node.js and Express.
   - [Prerequisites](#prerequisites)
   - [Installation and Running the API](#installation-)
 - [API Endpoints](#api-endpoints)
-  - [1. Retrieve all employees](#retrieve-all-employees)
-  - [2. Retrieve a specific employee by ID](#retrieve-a-specific-employee-by-id)
-  - [3. Create a new employee](#3-create-a-new-employee)
-  - [4. Update an existing employee by ID](#4-update-an-existing-employee-by-id)
-  - [5. Delete an employee by ID](#5-delete-an-employee-by-id)
-  - [6. Search employees by name or position](#6-search-employees-by-name-or-position)
-  - [7. Update the email of an employee by ID](#7-update-the-email-of-an-employee-by-id)
-  - [8. Update the position of an employee by ID](#8-update-the-position-of-an-employee-by-id)
-  - [9. Get the total number of employees](#9-get-the-total-number-of-employees)
+  - [1. Retrieve All Employees](#get-all-employees)
+  - [2. Retrieve Employee by ID](#get-employee-by-id)
+  - [3. Create a new employee](#create-employee)
+  - [4. Update an existing employee by ID](#update-employee-by-id)
+  - [5. Delete an employee by ID](#delete-employee-by-id)
+  - [6. Search employees by name or position](#search-employees)
+  - [7. Update the email of an employee by ID](#update-employee-email-by-id)
+  - [8. Update the position of an employee by ID](#update-employee-position-by-id)
+  - [9. Get the total number of employees](#get-total-number-of-employees)
 - [Authentication](#authentication)
 - [Using Authorization Token in Postman](#using-authorization-token-in-postman)
-  - [1. Create a new employee](#1-create-a-new-employee)
+  - [1. Create a new employee](#create-a-new-employee)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -233,7 +233,7 @@ Authentication is required for certain endpoints. When creating a new employee, 
 
 ### Using Authorization Token in Postman
 
-1. Create a New Employee:
+1. #### Create a New Employee:
     * Make a `POST` request to `http://localhost:3000/api/employees` (or your API endpoint) with the following sample JSON body:
     ```json
     {
