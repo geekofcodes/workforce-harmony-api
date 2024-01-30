@@ -205,7 +205,7 @@ This is a simple Employee Management System API built using Node.js and Express.
 
 ### Authentication
 Authentication is required for certain endpoints. When creating a new employee, an _**authentication token**_ will be generated based on the provided name and email. Include this token in the Authorization header for subsequent requests to protected endpoints.
-```http
+```
     Authorization: YourAuthTokenHere
 ```
 
