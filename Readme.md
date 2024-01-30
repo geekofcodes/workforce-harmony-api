@@ -32,8 +32,8 @@ This is a simple Employee Management System API built using Node.js and Express.
 
 ### API Endpoints
 
-#### 1. Get All Employees
-```http
-GET /api/employees
-```
+1. Get All Employees
+    ```http
+    GET /api/employees
+    ```
 
