@@ -52,7 +52,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```
     The server will run on http://localhost:3000 by default.
 
-### API Endpoints
+## API Endpoints
 
 1. #### Get All Employees
     ```http
@@ -225,13 +225,13 @@ Make sure you have Node.js and npm installed on your machine.
     }
     ```
 
-### Authentication
+## Authentication
 Authentication is required for certain endpoints. When creating a new employee, an _**authentication token**_ will be generated based on the provided name and email. Include this token in the Authorization header for subsequent requests to protected endpoints.
 ```
     Authorization: YourAuthTokenHere
 ```
 
-### Using Authorization Token in Postman
+## Using Authorization Token in Postman
 
 1. #### Create a New Employee:
     * Make a `POST` request to `http://localhost:3000/api/employees` (or your API endpoint) with the following sample JSON body:
@@ -259,7 +259,7 @@ Authentication is required for certain endpoints. When creating a new employee, 
 
 Now, your request should be authenticated, and you'll be able to access the protected endpoints.
 
-### Contributing
+## Contributing
 
 Feel free to contribute to this project by opening issues or submitting pull requests.
 
