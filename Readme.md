@@ -1,15 +1,37 @@
 # Workforce Harmony API
 
 This is a simple Employee Management System API built using Node.js and Express. The API provides endpoints for managing employees, including CRUD operations, search, and additional features.
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation and Running the API](#installation-)
+- [API Endpoints](#api-endpoints)
+  - [1. Retrieve all employees](#1-retrieve-all-employees)
+  - [2. Retrieve a specific employee by ID](#2-retrieve-a-specific-employee-by-id)
+  - [3. Create a new employee](#3-create-a-new-employee)
+  - [4. Update an existing employee by ID](#4-update-an-existing-employee-by-id)
+  - [5. Delete an employee by ID](#5-delete-an-employee-by-id)
+  - [6. Search employees by name or position](#6-search-employees-by-name-or-position)
+  - [7. Update the email of an employee by ID](#7-update-the-email-of-an-employee-by-id)
+  - [8. Update the position of an employee by ID](#8-update-the-position-of-an-employee-by-id)
+  - [9. Get the total number of employees](#9-get-the-total-number-of-employees)
+- [Authentication](#authentication)
+- [Using Authorization Token in Postman](#using-authorization-token-in-postman)
+  - [1. Create a new employee](#1-create-a-new-employee)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Getting Started
 
 ### Prerequisites
 
+Make sure you have Node.js and npm installed on your machine.
+
 - Node.js: [Download and Install Node.js](https://nodejs.org/)
 - npm (Node Package Manager): Included with Node.js installation
 
-### Installation
+### Installation and Running the API
 
 1. Clone the repository:
 
