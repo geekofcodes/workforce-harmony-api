@@ -54,7 +54,7 @@ Make sure you have Node.js and npm installed on your machine.
 
 ### API Endpoints
 
-1. Get All Employees
+1. #### Get All Employees
     ```http
     GET /api/employees
     ```
@@ -71,7 +71,7 @@ Make sure you have Node.js and npm installed on your machine.
     ]
     ```
 
-2. Get Employee by ID
+2. #### Get Employee by ID
     ```http
     GET /api/employees/:id
 
@@ -89,7 +89,7 @@ Make sure you have Node.js and npm installed on your machine.
     }
     ```
 
-3. Create Employee
+3. #### Create Employee
     ```http
     POST /api/employees
     ```
@@ -118,7 +118,7 @@ Make sure you have Node.js and npm installed on your machine.
 
     ```
 
-4. Update Employee by ID
+4. #### Update Employee by ID
     ```http
     PUT /api/employees/:id
     ```
@@ -140,7 +140,7 @@ Make sure you have Node.js and npm installed on your machine.
     }
     ```
 
-5. Delete Employee by ID
+5. #### Delete Employee by ID
     ```http
     DELETE /api/employees/:id
     ```
@@ -154,7 +154,7 @@ Make sure you have Node.js and npm installed on your machine.
     }
     ```
 
-6. Search Employees
+6. #### Search Employees
     ```http
     GET /api/employees/search?query=John
     ```
@@ -171,7 +171,7 @@ Make sure you have Node.js and npm installed on your machine.
     }
     ```
 
-7. Update Employee Email by ID
+7. #### Update Employee Email by ID
     ```http
     PATCH /api/employees/:id/email
     ```
@@ -191,7 +191,7 @@ Make sure you have Node.js and npm installed on your machine.
     }
     ```
 
-8. Update Employee Position by ID
+8. #### Update Employee Position by ID
     ```http
     PATCH /api/employees/:id/position
     ```
@@ -213,7 +213,7 @@ Make sure you have Node.js and npm installed on your machine.
 
     ```
 
-9. Get Total Number of Employees
+9. #### Get Total Number of Employees
     ```http
     GET /api/employees/total
     ```
