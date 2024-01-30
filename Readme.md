@@ -32,11 +32,11 @@ This is a simple Employee Management System API built using Node.js and Express.
 
 ### API Endpoints
 
-1. Get All Employees
+1. #### Get All Employees
     ```http
     GET /api/employees
     ```
-    Retrieve a list of all employees.
+    #### Retrieve a list of all employees.
     * Response
     ```json
     [
@@ -49,12 +49,12 @@ This is a simple Employee Management System API built using Node.js and Express.
     ]
     ```
 
-2. Get Employee by ID
+2. #### Get Employee by ID
     ```http
     GET /api/employees/:id
 
     ```
-    Retrieve details of a specific employee by providing the employee ID.
+    #### Retrieve details of a specific employee by providing the employee ID. _**Authentication**_ is required.
     * Parameters
         * id: The ID of the employee.
     * Response
@@ -67,11 +67,11 @@ This is a simple Employee Management System API built using Node.js and Express.
     }
     ```
 
-3. Create Employee
+3. #### Create Employee
     ```http
     POST /api/employees
     ```
-    Create a new employee by providing the name, position, and email. An _**authentication token**_ will be generated and provided.
+    #### Create a new employee by providing the name, position, and email. An _**authentication token**_ will be generated and provided.
     * Request
     ```json
     {
@@ -95,3 +95,27 @@ This is a simple Employee Management System API built using Node.js and Express.
     }
 
     ```
+
+4. #### Update Employee by ID
+    ```http
+    PUT /api/employees/:id
+    ```
+    #### Update details of a specific employee by providing the employee ID. _**Authentication**_ is required.
+    * Parameters
+        * id: The ID of the employee.
+    * Response
+    ```json
+    {
+      "name": "UpdatedName",
+      "position": "UpdatedPosition",
+      "email": "updated.email@example.com"
+    }
+    ```
+    * Response
+    ```json
+    {
+      "message": "Employee updated successfully"
+    }
+    ```
+
+
