@@ -38,6 +38,7 @@ This is a simple Employee Management System API built using Node.js and Express.
     ```
     Retrieve a list of all employees.
     Response:
+    ```json
     [
         {
             "id": 1,
@@ -47,4 +48,5 @@ This is a simple Employee Management System API built using Node.js and Express.
         },
         // ... other employees
     ]
+    ```
 
