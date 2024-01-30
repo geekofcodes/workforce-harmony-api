@@ -37,7 +37,7 @@ This is a simple Employee Management System API built using Node.js and Express.
     GET /api/employees
     ```
     Retrieve a list of all employees.
-    Response:
+    * Response
     ```json
     [
         {
@@ -46,7 +46,52 @@ This is a simple Employee Management System API built using Node.js and Express.
             "position": "Software Engineer",
             "email": "john@example.com"
         },
-        // ... other employees
     ]
     ```
 
+2. Get Employee by ID
+    ```http
+    GET /api/employees/:id
+
+    ```
+    Retrieve details of a specific employee by providing the employee ID.
+    * Parameters
+        * id: The ID of the employee.
+    * Response
+    ```json
+    {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Software Engineer",
+        "email": "john@example.com"
+    }
+    ```
+
+3. Create Employee
+    ```http
+    POST /api/employees
+    ```
+    Create a new employee by providing the name, position, and email. An _**authentication token**_ will be generated and provided.
+    * Request
+    ```json
+    {
+      "name": "Your Name",
+      "position": "Your Position",
+      "email": "your.email@example.com"
+    }
+
+    ```
+    * Response
+    ```json
+    {
+      "message": "Employee created successfully",
+      "authToken": "YourAuthTokenHere",
+      "employee": {
+        "id": 1,
+        "name": "Your Name",
+        "position": "Your Position",
+        "email": "your.email@example.com"
+      }
+    }
+
+    ```
