@@ -28,6 +28,5 @@ This is a simple Employee Management System API built using Node.js and Express.
     ```bash
     node app.js
     ```
-    
-
+    The server will run on http://localhost:3000 by default.
 
