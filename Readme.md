@@ -106,8 +106,8 @@ This is a simple Employee Management System API built using Node.js and Express.
     * Response
     ```json
     {
-      "name": "UpdatedName",
-      "position": "UpdatedPosition",
+      "name": "Updated Name",
+      "position": "Updated Position",
       "email": "updated.email@example.com"
     }
     ```
