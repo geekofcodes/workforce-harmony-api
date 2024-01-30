@@ -259,6 +259,7 @@ Authentication is required for certain endpoints. When creating a new employee, 
 
 Now, your request should be authenticated, and you'll be able to access the protected endpoints.
 
+### Contribution
 
-
+Feel free to contribute to this project by opening issues or submitting pull requests.
 
