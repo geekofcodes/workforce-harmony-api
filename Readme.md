@@ -76,7 +76,7 @@ Make sure you have Node.js and npm installed on your machine.
     GET /api/employees/:id
 
     ```
-    Retrieve details of a specific employee by providing the employee ID. _**Authentication**_ is required.
+    Retrieve details of a specific employee by providing the employee ID.[_**Authentication**_](#using-authorization-token-in-postman) is required.
     * Parameters:
         * id: The ID of the employee.
     * Response:
@@ -122,7 +122,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```http
     PUT /api/employees/:id
     ```
-    Update details of a specific employee by providing the employee ID. _**Authentication**_ is required.
+    Update details of a specific employee by providing the employee ID. [_**Authentication**_](#using-authorization-token-in-postman) is required.
     * Parameters:
         * id: The ID of the employee.
     * Request:
@@ -144,7 +144,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```http
     DELETE /api/employees/:id
     ```
-    Delete a specific employee by providing the employee ID. _**Authentication**_ is required.
+    Delete a specific employee by providing the employee ID. [_**Authentication**_](#using-authorization-token-in-postman) is required.
     * Parameters:
         * id: The ID of the employee.
     * Response:
@@ -158,7 +158,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```http
     GET /api/employees/search?query=John
     ```
-    Search employees by name or position. Replace John with the desired search query. _**Authentication**_ is required.
+    Search employees by name or position. Replace John with the desired search query. [_**Authentication**_](#using-authorization-token-in-postman) is required.
     * Parameters:
         * query: The search query i.e. name or position
     * Response:
@@ -175,7 +175,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```http
     PATCH /api/employees/:id/email
     ```
-    Update the email of a specific employee by providing the employee ID. _**Authentication**_ is required.
+    Update the email of a specific employee by providing the employee ID. [_**Authentication**_](#using-authorization-token-in-postman) is required.
     * Parameters:
         * id: The ID of the employee.
     * Request:
@@ -195,7 +195,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```http
     PATCH /api/employees/:id/position
     ```
-    Update the position of a specific employee by providing the employee ID. _**Authentication**_ is required.
+    Update the position of a specific employee by providing the employee ID. [_**Authentication**_](#using-authorization-token-in-postman) is required.
     * Parameters:
         * id: The ID of the employee.
     * Request:
@@ -217,7 +217,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```http
     GET /api/employees/total
     ```
-    Get the total number of employees. _**Authentication**_ is required.
+    Get the total number of employees. [_**Authentication**_](#using-authorization-token-in-postman) is required.
     * Response: 
     ```json
     {
