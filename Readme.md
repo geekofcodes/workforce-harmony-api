@@ -58,7 +58,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```http
     GET /api/employees
     ```
-    Retrieve a list of all employees.
+    Retrieve a list of all employees. [_**Authentication**_](#using-authorization-token-in-postman) is required.
     * Response:
     ```json
     [
