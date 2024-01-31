@@ -36,7 +36,7 @@ Make sure you have Node.js and npm installed on your machine.
 1. Clone the repository:
 
    ```bash
-    git clone https://github.com/your-username/employee-management-api.git
+    git clone https://github.com/geekofcodes/workforce-harmony-api.git
     ```
 2. Navigate to the Project Directory:
     ```bash
