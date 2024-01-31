@@ -40,7 +40,7 @@ Make sure you have Node.js and npm installed on your machine.
     ```
 2. Navigate to the Project Directory:
     ```bash
-    cd employee-management-api
+    cd workforce-harmony-api
     ```
 3. Install dependencies:
     ```bash
