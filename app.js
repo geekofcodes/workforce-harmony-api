@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const PORT = process.env.PORT || 5000;
+
 const app = express();
 app.use(bodyParser.json());
 
@@ -72,6 +74,7 @@ app.post('/api/employees', (req, res) => {
   });
 });
 
+
 app.put('/api/employees/:id', authenticate, (req, res) => {
   const employeeId = parseInt(req.params.id);
   const updatedEmployee = req.body;
@@ -132,7 +135,6 @@ app.patch('/api/employees/:id/position', authenticate, (req, res) => {
   res.json({ message: 'Employee position updated successfully' });
 });
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
