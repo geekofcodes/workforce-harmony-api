@@ -60,14 +60,14 @@ app.post('/api/employees', (req, res) => {
   const { name, position, email } = req.body;
 
   const authToken = Buffer.from(`${name}:${email}`).toString('base64');
-  authTokens[authToken] = { name, email };
+  authTokens[`Bearer ${authToken}`] = { name, email };
 
   const newEmployee = { id: employees.length + 1, name, position, email };
   employees.push(newEmployee);
 
   res.status(201).json({
     message: 'Employee created successfully',
-    authToken,
+    authToken: `Bearer ${authToken}`,
     employee: newEmployee,
   });
 });
